@@ -5,18 +5,18 @@ It highlights failed and successful SSH login attempts, sudo and su activity, an
 
 ## Installation
 
-'''bash
+```bash
 sudo cp auth-log-analyzer.sh /usr/local/sbin/auth-log-analyzer.sh  
 sudo chmod 0750 /usr/local/sbin/auth-log-analyzer.sh  
 sudo chown root:root /usr/local/sbin/auth-log-analyzer.sh  
-'''
+```
 
 ## Usage
 
 Run manually as root:  
-'''bash
+```bash
 sudo /usr/local/sbin/auth-log-analyzer.sh
-'''
+```
 
 Each run will:
 
@@ -27,9 +27,9 @@ Append runtime information to /var/log/auth_reports/auth-analyzer.log
 ## Schedule with cron
 
 Run hourly:  
-'''bash
+```bash
 0 * * * * /usr/local/sbin/auth-log-analyzer.sh >> /var/log/auth_reports/auth-analyzer.log 2>&1
-'''
+```
 
 ## Report Output
 
