@@ -5,9 +5,11 @@ Designed for daily automated backups with basic retention and logging.
 
 ## Installation
 
+'''bash
 sudo cp backup.sh /usr/local/sbin/backup.sh  
 sudo chmod 0750 /usr/local/sbin/backup.sh  
 sudo chown root:root /usr/local/sbin/backup.sh
+'''
 
 ## Configuration
 
@@ -22,7 +24,9 @@ If the file doesn’t exist, the script will create an empty one and exit with a
 ## Schedule with cron
 
 Run nightly at 3 AM:  
+'''bash
 0 3 * * * /usr/local/sbin/backup.sh >> /var/backups/system/backup.log 2>&1
+'''
 
 ## Notes
 
