@@ -1,0 +1,14 @@
+# Temporary files
+*~
+*.swp
+*.tmp
+
+# IDE/Editor
+.idea/
+.vscode/
+*.code-workspace
+
+# OS cruft
+.DS_Store
+Thumbs.db
+Desktop.ini
